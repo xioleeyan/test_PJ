@@ -1,0 +1,347 @@
+@font-face{
+	font-family: 'StoryScript';
+	src: url(../Font/Story_Script/StoryScript-Regular.ttf);
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-family: StoryScript;
+	scroll-behavior: smooth;
+}
+/*Common*/
+#main-container{
+	background-color: #ef079d;
+	padding-top: 50px;
+}
+
+.box-shadow{
+	box-shadow: 3px 3px 8px black;
+}
+
+.container{
+	max-width: 900px;
+	margin: auto;
+	display: flex;
+}
+
+.container:not(#header .container){
+	padding: 10px;
+}
+
+.section-title{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#aboutme,#myskills,#myworks,#contactme,#footer{
+	margin-top: 50px;
+}
+
+/*End Common*/
+
+/*Header CSS*/
+#header{
+	/*border: 2px solid green;*/
+}
+
+#header .container{
+	border: 5px solid #fff;	
+	border-radius: 10px;
+
+	align-items: center;
+
+	background-color: darkblue;
+}
+
+#header .container .content{
+	flex-basis: 60%;
+	text-align: center;
+	line-height: 25px;
+}
+#header .container .image-div{
+	flex-basis: 40%;
+}
+
+#header .container .image-div img{
+	width: 100%;
+	border-radius: 10px;
+	margin: auto;
+	display: block;
+}
+#header .container .content h4{
+	letter-spacing: 10px;
+}
+
+#header .container .content h4,
+#header .container .content h1,
+#header .container .content p{
+	margin-bottom: 20px;
+}
+
+.social-media a{
+	margin-right: 15px;
+	font-size: 30px;
+}
+
+.social-media .fa-youtube{
+	color: red;
+}
+.social-media .fa-instagram{
+	color: pink;
+}
+.social-media .fa-facebook{
+	color: blue;
+}
+
+/*About Me CSS*/
+#aboutme .container{
+	align-items: center;
+}
+#aboutme .container h2{
+	line-height: 40px;
+}
+#aboutme .container > div{
+	flex-basis: 50%;
+}
+
+#aboutme .image-div img{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin: auto;
+	display: block;
+}
+
+/*My Skills CSS*/
+#myskills .container > div{
+	flex-basis: 50%;
+}
+
+#myskills .container{
+	align-items: center;
+}
+
+#myskills .content .title-2,
+#myskills .content .title-3{
+	margin-top: 30px;
+}
+
+#myskills .content ul{
+	list-style-type: none;
+}
+
+#myskills .content ul li{
+	/*border: 2px solid orange;*/
+
+	display: inline-block;
+	background-color: rgba(193, 183, 189, 0.6);
+	padding: 10px 15px;
+	margin: 5px 5px 5px 0;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+#myskills .image-div{
+	padding: 50px 10px;
+}
+#myskills .image-div img{
+	width: 100%;
+	margin: auto;
+	display: block;
+	border-radius: 5px;
+}
+
+/*My Works CSS*/
+#myworks .container{
+	justify-content: space-between;
+}
+
+#myworks .card{
+	flex-basis: 30%;
+	background-color: #022293;
+	padding: 20px 10px;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+	transition: transform 1s, background-color 1s;
+}
+
+#myworks .card:hover{
+	background-color: #ef079d;
+	transform: scale(1.1);
+}
+
+#myworks .card h3{
+	margin: 20px 0;
+}
+
+#myworks .card i{
+	font-size: 30px;
+}
+
+/*Contact Me CSS*/
+
+#contactme .container div{
+	flex-basis: 50%;
+}
+
+#contactme .info ul{
+	list-style-type: none;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+#contactme .form .form-group{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+#contactme .form .form-group input,
+#contactme .form textarea,
+#contactme .form button{
+	border-radius: 5px;
+	border: none;
+	padding: 5px 10px;
+}
+
+#contactme .form .form-group input{
+	flex-basis: 49%;
+	height: 50px;
+	color: #000;
+}
+
+#contactme .form textarea{
+	width: 100%;
+	height: 100px;
+	margin-bottom: 8px;
+	color: #000;
+}
+
+#contactme .form button{
+	padding: 5px 30px;
+	float: right;
+	background-color: #022293;
+	cursor: pointer;
+}
+
+/*Footer CSS*/
+#footer{
+	background-color: #022293;
+	padding: 30px 0 100px 0;
+}
+
+#footer .container{
+	justify-content: space-between;
+}
+
+#footer .container .column{
+	flex-basis: 32%;
+	line-height: 35px;
+	text-align: center;
+}
+
+#footer .container .column h3{
+	margin-bottom: 30px;
+}
+
+#footer .container .column ul{
+	list-style-type: none;
+}
+
+#footer .container .column ul li a{
+	text-decoration: none;
+}
+
+#gototop{
+	background-color: orange;
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 25px;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+@media (max-width: 600px){
+	#main-container{
+		/*background-color: violet;*/
+	}
+
+	#header .container{
+		flex-direction: column-reverse;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+	}
+
+	#header .content{
+		padding: 20px 0;
+	}
+
+	/*Header Section*/
+	#header .container .image-div img {
+    border-radius: 0;
+	}
+
+	/*About Me Section*/
+	#aboutme .container{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#aboutme .content{
+		padding: 20px 0;
+	}
+
+	/*My Skills Section*/
+	#myskills .container{
+		flex-direction: column-reverse;
+	}
+
+	#myskills .content{
+		text-align: center;
+		padding: 20px 0;
+	}
+
+	/*My Works Section*/
+	#myworks .container{
+		flex-direction: column;
+	}
+	#myworks .card{
+		width: 90%;
+		margin: 10px auto;
+	}
+
+	/*Contact Me Section*/
+	#contactme .container{
+		flex-direction: column;
+	}
+
+	#contactme .form .form-group{
+		flex-direction: column;
+	}
+
+	#contactme .form .form-group input:first-child{
+		margin-bottom: 10px;
+	}	
+
+	/*Footer Section*/
+	#footer .container{
+		flex-direction: column;
+	}
+
+	#footer .column{
+		margin: 20px 0;
+	}
+
+	#footer .column h3{
+		margin-bottom: 10px;
+	}
+}
